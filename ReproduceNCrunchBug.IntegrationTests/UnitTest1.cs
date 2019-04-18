@@ -18,10 +18,19 @@ namespace ReproduceNCrunchBug.IntegrationTests
         }
 
         [Fact]
-        public void ContentRootEnvironmentVariableShouldBeCreatedByNCrunch()
+        public void ContentRootEnvironmentVariableIsCreatedBasedOnProjectName()
         {
 #if NCRUNCH
             var envVar = Environment.GetEnvironmentVariable("ASPNETCORE_TEST_CONTENTROOT_REPRODUCENCRUNCHBUG");
+            Assert.NotNull(envVar);
+#endif
+        }
+
+        [Fact]
+        public void ButShouldBeOnAssemblyName()
+        {
+#if NCRUNCH
+            var envVar = Environment.GetEnvironmentVariable("ASPNETCORE_TEST_CONTENTROOT_MYCOMPANY_REPRODUCENCRUNCHBUG");
             Assert.NotNull(envVar);
 #endif
         }
