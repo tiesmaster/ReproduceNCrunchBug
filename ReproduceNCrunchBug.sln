@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproduceNCrunchBug", "ReproduceNCrunchBug\ReproduceNCrunchBug.csproj", "{88199E62-7A6C-44FC-B038-176236526A65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproduceNCrunchBug.IntegrationTests", "ReproduceNCrunchBug.IntegrationTests\ReproduceNCrunchBug.IntegrationTests.csproj", "{BDE0CA29-91FD-4A77-B7F0-29B38B8CF146}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{88199E62-7A6C-44FC-B038-176236526A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88199E62-7A6C-44FC-B038-176236526A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88199E62-7A6C-44FC-B038-176236526A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE0CA29-91FD-4A77-B7F0-29B38B8CF146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE0CA29-91FD-4A77-B7F0-29B38B8CF146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE0CA29-91FD-4A77-B7F0-29B38B8CF146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE0CA29-91FD-4A77-B7F0-29B38B8CF146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
