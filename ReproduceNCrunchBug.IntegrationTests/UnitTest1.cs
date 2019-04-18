@@ -16,5 +16,14 @@ namespace ReproduceNCrunchBug.IntegrationTests
 
             Assert.NotNull(server);
         }
+
+        [Fact]
+        public void ContentRootEnvironmentVariableShouldBeCreatedByNCrunch()
+        {
+#if NCRUNCH
+            var envVar = Environment.GetEnvironmentVariable("ASPNETCORE_TEST_CONTENTROOT_REPRODUCENCRUNCHBUG");
+            Assert.NotNull(envVar);
+#endif
+        }
     }
 }
