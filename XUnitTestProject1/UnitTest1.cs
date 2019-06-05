@@ -1,3 +1,5 @@
+using TestHelpers;
+
 using Xunit;
 
 namespace XUnitTestProject1
@@ -7,6 +9,8 @@ namespace XUnitTestProject1
         [Fact]
         public void Test1()
         {
+            var c = new Class1();
+            Assert.NotNull(c);
         }
     }
 }
